@@ -46,12 +46,13 @@ $router->delete('/MSG/{id}', 'MFYController@delete');
 $router->get('/klientlar', 'KlientController@index');
 $router->post('/klientlar', 'KlientController@create');
 $router->delete('/klientlar/{id}', 'KlientController@delete');
+$router->get('/reester', 'KlientController@reester');
 
 
 $router->get("/alldata", "AllDataController@index");
 
 
-// hisobot router 
+// hisobot router
 $router->post('/hisobot', 'HisobotController@index');
 
 // sms routers
